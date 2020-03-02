@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/* ================================Content=============================*/
+.content {
+    margin: 20px auto;
+    width: 600px;
+    border: 1px solid #999;
+    padding: 10px;
+    background: url("image\\image1.jpg");
+    min-height: 200px;  
+}
+
+.content h1 {
+    color: rgb(65, 156, 149);
+    text-align: center;
+}
+
+.content ul {
+    margin: 23px 0px 0px 100px;
+    color: rgb(124, 149, 173);
+}
+
+
+.content ul li {
+    margin-top: 12px;
+    list-style: decimal inside;
+}
+/* ================================Content2=============================*/
+.content2 {
+    margin: 20px auto;
+    width: 600px;
+    border: 1px solid #999;
+    padding: 10px;
+    min-height: 200px;  
+}
+
+.content2 h1 {
+    color: red;
+    text-align: center;
+}
+
+.content2 ul {
+    margin: 23px 0px 0px 100px;
+}
+
+
+.content2 ul li {
+    margin-top: 12px;
+    list-style: decimal inside;
+}
+
+/* ================================Content3=============================*/
+.content3 {
+    margin: 20px auto;
+    width: 300px;
+    border: 1px solid #999;
+    padding: 10px;
+}
+
+.content3 h1 {
+    color: red;
+    text-align: center;
+}
+
+.content3 div.image {
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.content3 div.image img {
+    margin: 10px 0px;
+    height: 300px;
+    width: 300px;
+}
+
+.content3 div.image a {
+    display: inline-block;
+    background-color: #686f97;
+    padding: 3px 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.content3 div.image a:hover {
+    color: #f6f312;
+}
+
+/* ================================Content4=============================*/
+.content4 {
+    margin: 20px auto;
+    width: 600px;
+    border: 1px solid #999;
+    padding: 10px;
+}
+
+.content4 h1 {
+    color: red;
+    text-align: center;
+}
+
+.content4 div.result {
+    margin-left: 320px;
+}
+
+.content4 div.question {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.content4 div.question p {
+    margin-top: 5px;
+}
+
+.content4 div.question p:last-child {
+    text-align: right;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.content4 div.answer p{
+    font-weight: bold;
+}
+/* ================================Content5=============================*/
+.content5 {
+    margin: 20px auto;
+    width: 600px;
+    border: 1px solid #999;
+    padding: 10px;
+}
+
+.content5  .info {
+    display: flex;
+    border:1px solid blue;
+}
+.content5 div.info h1 {
+    color: red;
+    text-align: center;
+}
+
+.content5 .result .normal {
+    display: flex;
+}
+
+.content5 .result .normal .col1 {
+    font-weight: bolder;
+    margin-top: 50px;
+}
+
+.content5 .result .normal .col2 {
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+.content5 .result .normal .col3 {
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+.content5 .result .total {
+    margin-top: 20px;
+    text-align: right;
+    font-weight: bolder;
+    color: blue;
+}
