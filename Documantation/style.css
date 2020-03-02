@@ -1,0 +1,103 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', Courier, monospace;
+    font-size: 16px;
+    color: #5a5a5a;
+    background-color: #ffffff;
+    text-rendering: optimizeLegibility;
+}
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------Initial Setting---------------------------- */
+/* -------------------------------------------------------------------------- */
+
+#container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-container {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0vw;
+    border-right: 3px solid black;
+}
+
+.nav-container h2 {
+    display: flex;
+    width: 100%;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-container .main-nav{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-container .main-nav li {
+    width: 100%;
+    height: 15%;
+    border-top: 1px solid black;
+    list-style: none;
+}
+
+.nav-container .main-nav li a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.content-container {
+    width: 65%;
+    font-size: 70%;
+    margin: 30px 0;
+    position : relative;
+    left: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content-container .content-element {
+    width: 100%;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.content-container .content-element h1 {
+    margin: 15px auto;
+}
+
+.content-container .content-element p {
+    word-wrap: break-word;
+    margin-left: 5px;
+}
+
+.content-container .content-element ul {
+    width: 80%;
+}
+
+.content-container .content-element .box-code {
+    font-size: 14;
+    background-color: rgb(228, 227, 227);
+    padding: 10px 5px;
+    font-family: 'Consolas', monospace;
+}

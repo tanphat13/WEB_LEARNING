@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>My Document</title>
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div id="container">
+
+            <div class="nav-container">
+                <h2>My Documentation</h2>
+                <ul class="main-nav">
+                    <li><a href="#intro">Introduction</a></li>
+                    <li><a href="#knowledge">What you should already know</a></li>
+                    <li><a href="#hello">Hello World</a></li>
+                    <li><a href="#variable">Variables</a></li>
+                    <li><a href="#scope">Variables scope</a></li>
+                    <li><a href="#constant" >Constants</a></li>
+                </ul>
+            </div>
+
+            <div class="content-container">
+                
+                <div class="content-element">
+                    <h1 id="intro">Introduction</h1>
+                    <p>JavaScript is a cross platform, object oriented scripting language. It is a small and lightweight language. Inside a host environement
+                        (for example, a web browser), JavaScript can be connected to the objects of its environement to provide programmistic control over them.
+                    <br><br>
+                        JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators,
+                        control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects;
+                        for example:
+                    </p>
+                    <br>
+                    <ul>
+                        <li><p>Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). 
+                            For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks,
+                            form input, and page navigation.
+                        </p></li>
+                        <li><p>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, 
+                            server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another
+                            of the application, or preform file manipulation on a server.
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="content-element">
+                    <h1 id="knowledge">What you should already know</h1>
+                    <p>This guide assumes you have the following basic background
+                    </p>
+                    <br>
+                    <ul>
+                        <li><p>A general understanding of the Internet and World Wide Web (WWW).
+                        </p></li>
+                        <li><p>Good working knowledge of HyperText Markup Language (HTML).
+                        </li>
+                        <li><p>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="content-element">
+                    <h1 id="hello">Hello World</h1>
+                    <p>
+                        To get started with writing JavaScript, open the Scratchpad and write your first "Hello World" JavaScript code:
+                    </p>
+                    <br>
+                    <div class="box-code">
+                        <p>
+                            function greetMe(yourName) { alert("Hello" + yourName); } <br>
+                            greetMe("World");
+                        </p>
+                    </div>
+                </div>
+
+                <div class="content-element">
+                    <h1 id="variable">Variables</h1>
+                    <p>
+                        You use variables as symbolic names for values in your application. The names of variables, called identifiers,
+                        conform to certain rules. <br>
+                        A JavaScript identifiers must start with a letter, underscore (_), or dollar sign ($); subsequent characters can
+                        also be digits (0-9). Because JavaScript is case sennsitive, letters include the characters "A" though "Z" (uppercase)
+                        and the characters "a" through "z" (lowercase). <br>
+                        You can use ISO 8859-1 or Unicode letters in identifiers. You can also use the Unicode escape sequences as characters in identifiers
+                        . Some examples of legal names are Number_hits, temp99, and _name.
+                    </p>
+                    <br>
+                </div>
+
+                <div class="content-element">
+                    <h1 id="scope">Variable scope</h1>
+                    <p>
+                        When you declare a variable outside of any function, it is called a global variable, because it is available to any other code
+                        in the current document. When you declare a variable within a function, it is called a local variable, because it is available
+                        only within that function. <br>
+                        JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function
+                        (or global scope) that the block resides within. For example, the following code will log 5, because the scope of x is the function
+                        (or global context) within which x is declared, not the block, which is this case is an if statement
+                    </p>
+                    <br>
+                    <div class="box-code">
+                        <p>if (true) { var x = 5; } console.log(x); // 5</p>
+                    </div>
+                </div>
+
+                <div class="content-element">
+                    <h1 id="constant">Constants</h1>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem consectetur quasi maiores saepe ut laboriosam placeat nobis at inventore? Quo maiores, soluta reprehenderit natus harum nemo explicabo earum ex ea.
+                    </p>
+                    <br>
+                </div>
+
+            </div>
+        
+        </div>
+    </body>
+</html>
