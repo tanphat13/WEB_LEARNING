@@ -81,22 +81,15 @@ function addElement(object, newBook) {
 const viewCover = document.getElementById('book-list');
 viewCover.addEventListener('click', function (event) {
     let cover = '';
-    switch(event.target.id) {
-        case '1':
-            cover = 'NOTW';
-            break;
-        case '2':
-            cover = 'TWMF';
-            break;
-        case '3':
-            cover = 'KOTS';
-            break;
-        case '4':
-            cover = 'TMAM';
-            break;
-        case '5':
-            cover = 'IT'
-            break;
-    }
-    event.target.parentNode.parentNode.parentNode.nextElementSibling.nextElementSibling.firstElementChild.classList = cover;
+    let imageList = fetch('./image-url.json').then((res) => res.json()).then((data) => {
+        let coverList = Object.getOwnPropertyNames(data);
+        coverList.forEach((value) => {
+            if (value.split('-')[1] === event.target.id) {
+                cover = data[value];
+            }
+        });
+    let newCover = document.getElementById('book-cover');
+    newCover.src = cover;
+    newCover.style.cssText += 'display: initial;';    
+    });
 });
